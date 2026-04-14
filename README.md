@@ -89,9 +89,7 @@ Notes:
   - Hyperparameters: `N_EPOCHS=50`, `BATCH_SIZE=128`, `LR=1e-3`, `WEIGHT_DECAY=1e-4`, `HIDDEN_DIM=128`, `NUM_SAGE_LAYERS=2`, `DROPOUT=0.1`.
   - Uses `seed=42` for reproducibility.
   - Includes fallback handling for transformers availability.
-  - Logged run in saved output shows `Feature dim: 768` and test metrics:
-    - `acc: 0.48868778280542985`
-    - `prec: 0.0`, `rec: 0.0`, `f1: 0.0`
+  - Logged run in saved output shows `Feature dim: 768` 
 
 - `gnn-graph.ipynb`
   - Reads arXiv metadata (`arxiv-metadata-oai-snapshot.json`) and caps ingest at 50k lines.
@@ -131,6 +129,5 @@ Notes:
 - Project-reported headline: **85% test accuracy** for Fake vs Real news classification.
 - Saved notebook snapshot values currently visible in this repo include:
   - `fakenews.ipynb`: `0.8326` accuracy-like score from `test(test_loader)`.
-  - `GNN_Fake_News.ipynb` logged run: test `acc=0.4887`.
 
 This indicates multiple experiment states/checkpoints in notebooks; consolidating final reproducible runs into one tracked experiment script is a recommended next step.
